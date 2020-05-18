@@ -2,7 +2,7 @@
 
 :root
 {
-    --modal-duration: 1s;
+    --modal-duration: 0.5s;
     --main-color: #484848;
     --secondary-color: #408E39;
 }
@@ -158,6 +158,21 @@ button:focus { outline: none; }
     transform: translate(-50%, -50%);
     max-width: 400px;
     width: 40vw;
+
+    animation-name: modal-open;
+    animation-duration: var(--modal-duration);
+}
+@keyframes modal-open
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
 }
 
 .modal_header
