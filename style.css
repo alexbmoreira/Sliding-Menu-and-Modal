@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat+Alternates&display=swap');
+
 :root
 {
     --modal-duration: 1s;
@@ -9,6 +11,7 @@
 
 body
 {
+    font-family: 'Barlow', sans-serif;
     margin: 0;
 }
 
@@ -66,23 +69,72 @@ nav ul li:first-of-type
     padding: 20px;
 }
 
+/* Header */
 header
 {
     background-color: var(--main-color);
     color: #FFFFFF;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+}
+header h1
+{
+    margin: 0;
+}
+header p
+{
+    margin: 30px 0;
+}
+
+/* Header Buttons */
+button
+{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+}
+button:focus { outline: none; }
+
+.toggle
+{
+    background-color: rgba(200, 200, 200, 0.1);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.cta_btn
+{
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+/* Container */
+.container
+{
+    font-size: 18px;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
 }
 
 /* Modal */
 .modal
 {
+    position: relative;
 	background-color: #4C4C4C;
 	border-radius: 25px;
     min-width: 50vh;
     width: 50vh;
     box-shadow: 0px 2px 10px rbga(0,0,0,0.3);
 }
-
 .modal_header, .modal_content
 {
     align-items: center;
@@ -90,11 +142,18 @@ header
     display: flex;
     flex-direction: column;
 }
-
 .modal_form
 {
 	color: #FFFFFF;
 	padding: 30px;
+}
+
+.close_modal
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
 }
 
 .form_control
@@ -156,13 +215,7 @@ h3
 
 .submit
 {
-	cursor: pointer;
-	background-color: #4F95A1;
-	padding: 10px;
-	border: 0px;
-	border-radius: 5px;
-	width: 30%;
+	width: 50%;
 	font-size: 16px;
-	font-weight: bold;
 	color: #FFFFFF;
 }
