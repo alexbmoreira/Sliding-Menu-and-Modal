@@ -143,6 +143,11 @@ button:focus { outline: none; }
     left: 0;
     right: 0;
 }
+.modal_container.show_modal
+{
+    display: block;
+    opacity: 1;
+}
 .modal
 {
     background-color: var(--main-color);
