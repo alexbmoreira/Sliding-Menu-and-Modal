@@ -191,7 +191,7 @@ button:focus { outline: none; }
 {
     text-align: left;
     margin: 0;
-    padding: 10px 50px;
+    padding: 10px 30px;
     font-size: 1.5em;
 }
 
@@ -224,13 +224,11 @@ button:focus { outline: none; }
 	padding-bottom:  20px;
 	position: relative;
 }
-
 .form_control label
 {
 	display: block;
 	margin-bottom: 5px;
 }
-
 .form_control input
 {
 	border: 2px solid #909090;
@@ -245,7 +243,6 @@ button:focus { outline: none; }
 {
 	border-color: var(--success-color);
 }
-
 .form_control.error input
 {
 	border-color: var(--error-color);
@@ -259,22 +256,15 @@ button:focus { outline: none; }
 	left: 0;
 	visibility: hidden;
 }
-
 .form_control.error small
 {
 	visibility: visible;
-}
-
-h3
-{
-	text-align: center;
 }
 
 .button_holder
 {
 	text-align: center;
 }
-
 .submit
 {
 	width: 50%;
