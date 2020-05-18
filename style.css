@@ -5,6 +5,9 @@
     --modal-duration: 0.5s;
     --main-color: #484848;
     --secondary-color: #408E39;
+    
+	--success-color: #2ECC71;
+	--error-color: #E74C3C;
 }
 
 *{ box-sizing: border-box; }
@@ -175,6 +178,7 @@ button:focus { outline: none; }
     }
 }
 
+/* Modal Header */
 .modal_header
 {
     background-color: var(--secondary-color);
@@ -191,6 +195,7 @@ button:focus { outline: none; }
     font-size: 1.5em;
 }
 
+/* Modal Form */
 .modal_content
 {
     align-items: center;
